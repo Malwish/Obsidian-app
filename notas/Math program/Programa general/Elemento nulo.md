@@ -1,0 +1,1 @@
+Elemento que operado da el elemento identidad.

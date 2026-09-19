@@ -1,0 +1,35 @@
+* Eje Números y operaciones
+	- [[Reales]]
+		- [[Irracionales]] en la recta numérica.
+		- [[Potencias y Raíces como exponentes fraccionarios]]
+		- [[Lenguaje simbólico]]
+		- [[Factor común]]
+- Introducción al algebra
+	- [[Algebra/Funciones/Función|Función]]
+		- Pasaje de [[Fórmula]]s de las funciones a distintas formas.
+		- [[Desplazamientos  de las funciones]]
+		- [[Ecuación de la recta que pasa por un punto dada la pendiente]] 
+		- Funciones lineales paralelas.
+		- [[Máximos y mínimos de una función]] 
+		- [[Raíces]]
+		- [[Intervalos de crecimiento y decrecimiento]]
+		- [[Intervalos de positividad y negatividad]]
+		- interpretación gráfica de [[Funciones trigonométricas]]
+	- [[Inecuación]] y [[Ecuación]] con modulo.
+	- [[Sistema de ecuaciones]]
+- Probabilidad y estadística  
+	- Análisis del uso de las [[Medidas de tendencia central]]
+- Geometría 
+	- [[Mediana de un triángulo]]
+	- [[Mediatriz]]
+	- [[Altura de un triángulo]]
+	- [[Recta de Euler]]
+	- [[Distancia entre dos puntos del plano cartesiano]]
+	- [[Ángulos inscritos en una circunferencia]]
+	- [[Transformaciones en el plano cartesiano]]
+	- [[Simetría]]
+	- [[Ejes de simetría]]
+	- [[Teorema de Thales]]
+	- [[Criterios de construcción de triángulos]]
+	- [[Razones trigonométricas]]
+	- 

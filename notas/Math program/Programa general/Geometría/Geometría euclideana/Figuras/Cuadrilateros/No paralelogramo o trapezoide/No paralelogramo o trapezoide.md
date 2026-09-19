@@ -1,0 +1,1 @@
+Cuadrilátero que no tiene ningún par de lados paralelos.

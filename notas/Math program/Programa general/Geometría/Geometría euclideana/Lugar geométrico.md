@@ -1,0 +1,1 @@
+Conjunto de [[Punto]]s que cumplen una condición dada. Por ejemplo: todos los puntos a 5 cm de una recta.

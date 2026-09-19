@@ -1,0 +1,1 @@
+[[Polígono]] de seis lados.

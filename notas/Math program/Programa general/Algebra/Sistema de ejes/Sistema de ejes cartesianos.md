@@ -1,0 +1,2 @@
+Un sistema de ejes cartesianos está formado por dos rectas perpendiculares en el plano bidimensional, llamadas ejes de coordenadas. La recta horizontal se denomina eje X o eje de las abscisas, mientras que la recta vertical se llama eje Y o eje de las ordenadas. El punto donde se cruzan ambos ejes se llama origen de coordenadas (O) y se representa como (0,0) en dos dimensiones.
+![[Pasted image 20260225164024.png]]

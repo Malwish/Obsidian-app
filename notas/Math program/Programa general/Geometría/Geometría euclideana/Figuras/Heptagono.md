@@ -1,0 +1,1 @@
+[[Polígono]] de 7 lados.

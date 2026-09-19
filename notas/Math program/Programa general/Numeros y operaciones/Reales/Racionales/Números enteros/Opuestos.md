@@ -1,0 +1,1 @@
+El opuesto (-A) de un número A en el conjunto de los números enteros Z es aquel que resuelve la operación: A+(-A) = 0

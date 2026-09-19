@@ -1,0 +1,1 @@
+Los [[Racionales positivos y fracciones (Q)]] se extienden a los números negativos, lo cual es lo mismo si seguimos la lógica de las operaciones con positivos respecto a las nuevas operaciones con negativos.

@@ -1,0 +1,1 @@
+![[Pasted image 20260211101015.png]]Un **cuerpo geométrico** es un **subconjunto tridimensional** de R3 (tres dimensiones en R, {x;y;z}) que **ocupa volumen**.

@@ -1,0 +1,1 @@
+Un diagrama de árbol es una forma visual o grafica de analizar las probabilidades de un evento.

@@ -1,0 +1,1 @@
+Una intersección es una superposición de dos puntos o elementos.

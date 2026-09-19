@@ -1,0 +1,1 @@
+Para hallar el valor decimal de una fracción debemos dividir el numerador por el denominador. podemos hacer uso de calculadora o de cuentas auxiliares de la forma tradicional hasta llegar al cero resto. 

@@ -1,0 +1,1 @@
+El conjunto de los Reales (|R) es el conjuntos conformado por la union de los conjuntos [[Racionales positivos y fracciones (Q)]], los [[Racionales Negativos]] y los [[Irracionales]].

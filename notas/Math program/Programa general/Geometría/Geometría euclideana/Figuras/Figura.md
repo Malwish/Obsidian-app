@@ -1,0 +1,1 @@
+Una figura es un elemento geométrico que ocupa un área en el espacio R².

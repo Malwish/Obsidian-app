@@ -1,0 +1,53 @@
+- Eje Números y operaciones
+	- [[Enteros]]
+		- [[Opuestos]]
+		- [[Modulo o valor absoluto]]
+		- [[Potencias en Z]]
+		- [[Raíz]]
+		- [[Divisibilidad en z]]
+	- [[Racionales Negativos]]
+		- [[Ubicación en la recta de números Racionales negativos]]
+		- [[Potencias en z de exponente negativo]]
+		- [[Redondeo y truncamiento]]
+		- [[Irracionales]]
+- Algebra
+		- [[Función lineal]]
+		- [[Función cuadrática]]
+		- [[Valor absoluto de una función]]
+		- [[Función constante]]
+		- [[Función de proporcionalidad directa]]
+			- [[Proporcionalidad directa]] vs [[Proporcionalidad inversa]]
+		- [[Fórmula]] creación de fórmulas a partir de secuencias.
+		- [[Ecuación]] como igualdad
+			- [[Tipos de solución de ecuaciones]] 
+- Probabilidad
+	- [[Probabilidad]]
+		- [[Suceso]]
+		- [[Medidas de tendencia central]] retomar.
+		- [[Diagrama de árbol]]
+		- [[Sucesos equiprobables o no equiprobables]]
+		- [[Sucesos imposibles y certezas]]
+		- [[Combinatoria]]
+		- [[Factorial]]
+- Geometría
+	- [[Cuerpo]]
+	- [[Cuerpos platónicos]]
+	- Desarrollo y análisis del desarrollo de los cuerpos geométricos.
+	- [[Figura]]s no regulares.
+		- [[Cuadrilátero]]s
+		- [[Triangulo]]s
+			- [[Triangulo escaleno]]
+			- [[Triangulo isósceles]]
+			- [[Triangulo equilátero]]
+			- [[Programa general/Geometría/Geometría euclideana/Figuras/Triangulos/Clasificación por ángulos/Triángulo rectángulo/Triangulo rectángulo]]
+			- [[Triangulo acutángulo]]
+			- [[Triangulo obtusángulo]]
+			- [[Criterios de construcción de triángulos]]
+	- [[Lugar geométrico]]
+	- [[Circunferencia]]
+	- [[Magnitudes y medidas]]
+	- [[Volumen]]
+	- [[Programa general/Numeros y operaciones/Reales/Racionales/Números enteros/Naturales/Sistema de numeraciòn/Sistema sexagesimal/Sistema Sexagesimal|Sistema Sexagesimal]] 
+	- [[Perímetro]] vs [[Medidas de área]] 
+	- [[Teorema de Pitágoras]]
+	- [[Ángulos entre paralelas]]

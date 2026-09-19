@@ -1,0 +1,2 @@
+Las **medidas de tendencia central** son **estadísticos numéricos** que **resumen un conjunto de datos mediante un valor representativo**, indicando el **centro o punto de equilibrio** de la distribución.
+Las medidas de tendencia central buscan **condensar la información de muchos datos en un único valor que describa su comportamiento típico**.

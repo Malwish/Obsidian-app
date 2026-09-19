@@ -1,0 +1,1 @@
+Dos rectas son secantes si son intersecadas. 

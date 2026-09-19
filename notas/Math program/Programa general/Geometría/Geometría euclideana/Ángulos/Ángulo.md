@@ -1,0 +1,3 @@
+Un **ángulo** es la **figura formada por dos semirrectas, dos rectas o dos segmentos con un origen común**. Indica la apertura que hay entre las dos semirrectas, rectas o segmentos. Se mide en grados, que utilizan el [[Sistema Sexagesimal]].
+
+Gráficamente se indica con una semicircunferencia que ligue a ambos lados que lo contiene, indicando su apertura. Si es un [[Ángulo recto]], se indica con un cuadrado.

@@ -1,0 +1,1 @@
+Bienvenido a tu viaje como matemático. Como primer paso resolveremos un diagnostico para que puedas obviarte conceptos matematicos conocidos. en total son "X" diagnosticos. Cada uno es mas avanzado que el anterior, por lo que si no avanzas en uno, comenzaràs con, maximo los contenidos hasta ese diagnostico.

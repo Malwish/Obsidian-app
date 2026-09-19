@@ -1,0 +1,1 @@
+El máximo común divisor o MCD es el mayor de los divisores comunes entre dos números.

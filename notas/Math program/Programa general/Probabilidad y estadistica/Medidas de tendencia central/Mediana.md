@@ -1,0 +1,2 @@
+Si la [[Población]] esta conformada mediante [[Datos]] Cuantitativos (ver [[Datos]]) 
+La mediana se define como el dato que se haya al centro de la lista de los datos ordenados de menor a mayor. En el caso de que sea compartido, se hará el [[Promedio o media aritmética]] de ambos.

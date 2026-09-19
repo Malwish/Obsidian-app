@@ -1,0 +1,24 @@
+Eje Números y operaciones
+- [[Naturales]] (máximo dos clases)
+	- [[Programa general/Numeros y operaciones/Reales/Racionales/Números enteros/Naturales/Operaciones basicas/Suma|Suma]]
+	- [[Resta, diferencia o sustracción]]
+	- [[Producto o multiplicación]]
+	- [[División o cociente]]
+	- [[Potencias]]
+	- [[Raíz]]
+	- [[Múltiplos]] y [[Divisores]]
+		- [[Máximo común divisor]]
+		- [[Mínimo común múltiplo]]
+		- [[Criterios de divisibilidad]]
+		- [[Factorización en números primos de un término]]
+- [[Racionales positivos y fracciones (Q)]]
+	- [[Fracciones equivalentes]]
+	- [[Ubicación en la recta de números Racionales positivos.]]
+	- [[Suma de fracciones|Suma de fracciones]]
+	- [[Razón]]
+	- [[Proporción]]
+	- [[Porcentaje]] cómo fracción.
+Eje Introducción al algebra.
+- Gráficos y tablas con la noción de [[Programa general/Algebra/Funciones/Función]].
+- [[Variable Matemática]]
+- [[Sucesión]] y [[Fórmula]] 

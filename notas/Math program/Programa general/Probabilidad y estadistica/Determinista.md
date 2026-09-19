@@ -1,0 +1,1 @@
+**Determinista:** el resultado es predecible con certeza.

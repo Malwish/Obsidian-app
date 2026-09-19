@@ -1,0 +1,3 @@
+Un punto es aquello que no tiene partes, dimensiones, solo ubicación. Se nombra con una letra MAYUSCULA y se indica con una mínima señalización, puede ser un punto, una cruz o una circunferencia mínima.
+
+En el plano o [[Sistema de ejes cartesianos]] lo ubicamos  con dos valores, uno horizontal, generalmente en "X" y otro vertical generalmente "Y" y se escribe como el par ordenado (X,Y). Por ejemplo el punto P=(3,4) esta ubicado en 3 unidades en "X" y 4 unidades en "Y".

@@ -1,0 +1,1 @@
+La divisibilidad se extiende para los números enteros.

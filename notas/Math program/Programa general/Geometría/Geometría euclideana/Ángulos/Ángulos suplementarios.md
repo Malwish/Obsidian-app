@@ -1,0 +1,1 @@
+Los ángulos suplementarios suman 180°.

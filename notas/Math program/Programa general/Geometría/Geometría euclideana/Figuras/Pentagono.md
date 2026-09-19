@@ -1,0 +1,1 @@
+[[Polígono]] de 5 lados.

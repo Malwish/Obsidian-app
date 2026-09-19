@@ -38,6 +38,9 @@ Cuando el alumno plantee una duda o ejercicio:
 3. Ejemplo paso a paso o análisis de errores frecuentes.
 4. Una pregunta breve al final para verificar la comprensión del alumno.`;
 
+    // Modelo configurable. GPT-OSS 120B reemplaza al Llama 3.3 70B retirado del plan Developer.
+    const groqModel = process.env.GROQ_MODEL || 'openai/gpt-oss-120b';
+
     // Petición a la API de Groq usando formato compatible con OpenAI
     const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
@@ -46,7 +49,7 @@ Cuando el alumno plantee una duda o ejercicio:
         'Authorization': `Bearer ${apiKey}`
       },
       body: JSON.stringify({
-        model: 'llama-3.3-70b-versatile',
+        model: groqModel,
         messages: [
           { role: 'system', content: systemPromptText },
           { role: 'user', content: mensaje }
@@ -60,7 +63,7 @@ Cuando el alumno plantee una duda o ejercicio:
 
     if (res.ok && data.choices && data.choices[0]?.message?.content) {
       const textoRespuesta = data.choices[0].message.content;
-      console.log('[Matt-IA-S-1.0] Respuesta generada exitosamente con Groq (Llama 3.3 70B)');
+      console.log(`[Matt-IA-S-1.0] Respuesta generada exitosamente con Groq (${groqModel})`);
       return NextResponse.json({ respuesta: textoRespuesta });
     } else {
       const errMsg = data.error?.message || JSON.stringify(data);

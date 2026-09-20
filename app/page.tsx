@@ -14,13 +14,65 @@ function MathBlock({ math }: { math: string }) {
   return <div className="my-2" dangerouslySetInnerHTML={{ __html: html }} />;
 }
 
+function RenderizarRespuesta({ texto }: { texto: string }) {
+  // Soporta bloques \\[...\\] y $$...$$, e inline \\(...\\) y $...$.
+  const patronBloques = /(\\\[[\s\S]*?\\\]|\$\$[\s\S]*?\$\$)/g;
+  const partes = texto.split(patronBloques);
+
+  return (
+    <div className="space-y-2">
+      {partes.map((parte, indice) => {
+        if (!parte) return null;
+
+        const esBloqueCorchetes = parte.startsWith('\\[') && parte.endsWith('\\]');
+        const esBloqueDolares = parte.startsWith('$$') && parte.endsWith('$$');
+
+        if (esBloqueCorchetes || esBloqueDolares) {
+          const math = esBloqueCorchetes ? parte.slice(2, -2) : parte.slice(2, -2);
+          return <MathBlock key={indice} math={math.trim()} />;
+        }
+
+        const patronInline = /(\\\([\s\S]*?\\\)|\$[^$\n]+\$)/g;
+        const inlinePartes = parte.split(patronInline);
+
+        return (
+          <span key={indice} className="whitespace-pre-wrap">
+            {inlinePartes.map((fragmento, j) => {
+              const parentesis = fragmento.startsWith('\\(') && fragmento.endsWith('\\)');
+              const dolares = fragmento.startsWith('$') && fragmento.endsWith('$') && fragmento.length > 2;
+
+              if (parentesis || dolares) {
+                const math = parentesis ? fragmento.slice(2, -2) : fragmento.slice(1, -1);
+                return <MathInline key={j} math={math.trim()} />;
+              }
+
+              // Limpia Markdown básico para que no aparezcan símbolos raros en pantalla.
+              const limpio = fragmento
+                .replace(/^#{1,6}\s+/gm, '')
+                .replace(/\*\*(.*?)\*\*/g, '$1')
+                .replace(/__(.*?)__/g, '$1');
+
+              return <span key={j}>{limpio}</span>;
+            })}
+          </span>
+        );
+      })}
+    </div>
+  );
+}
+
 export default function Home() {
   const [curso, setCurso] = useState('1.º Año');
   const [interes, setInteres] = useState('');
   const [comenzado, setComenzado] = useState(false);
   const [chatInput, setChatInput] = useState('');
   const [cargandoIA, setCargandoIA] = useState(false);
-  const [mensajes, setMensajes] = useState<Array<{ rol: string; texto: string }>>([]);
+  const [mensajes, setMensajes] = useState<Array<{
+    rol: string;
+    texto: string;
+    sinRespuesta?: boolean;
+    preguntaOriginal?: string;
+  }>>([]);
 
   const opcionesInteres = [
     { id: 'minecraft', nombre: 'Minecraft / Gaming', icono: '🎮' },
@@ -50,13 +102,22 @@ export default function Home() {
           curso: curso,
           interes: interes,
           temaContexto: 'Sub-eje 1: Conjunto N, Divisibilidad, Criterios (2, 3, 5), MCM y MCD',
+          historial: mensajes.slice(-8).map((m) => ({ rol: m.rol, texto: m.texto })),
         }),
       });
 
       const data = await res.json();
 
       if (data.respuesta) {
-        setMensajes((prev) => [...prev, { rol: 'ia', texto: data.respuesta }]);
+        setMensajes((prev) => [
+          ...prev,
+          {
+            rol: 'ia',
+            texto: data.respuesta,
+            sinRespuesta: Boolean(data.sinRespuesta),
+            preguntaOriginal: data.preguntaOriginal || preguntaUsuario,
+          },
+        ]);
       } else {
         setMensajes((prev) => [
           ...prev,
@@ -228,7 +289,34 @@ export default function Home() {
                         : 'bg-slate-800 text-slate-200 border border-slate-700 max-w-[90%]'
                     }`}
                   >
-                    {m.texto}
+                    {m.rol === 'ia' ? <RenderizarRespuesta texto={m.texto} /> : m.texto}
+
+                    {m.rol === 'ia' && m.sinRespuesta && (
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const pregunta = m.preguntaOriginal || 'Consulta sin detalle';
+                          const mensajeWhatsApp = [
+                            'Hola profesor. Estoy usando Matt-IA y no encontré respuesta para esta consulta:',
+                            '',
+                            `“${pregunta}”`,
+                            '',
+                            `Curso: ${curso || 'No especificado'}.`,
+                            '',
+                            '¿Podría agregar este contenido a Matt-IA?'
+                          ].join('\n');
+
+                          const urlWhatsApp =
+                            'https://api.whatsapp.com/send?phone=542983545508&text=' +
+                            encodeURIComponent(mensajeWhatsApp);
+
+                          window.open(urlWhatsApp, '_blank', 'noopener,noreferrer');
+                        }}
+                        className="mt-3 inline-flex items-center gap-2 rounded-lg bg-emerald-600 px-4 py-2 font-semibold text-white hover:bg-emerald-500 transition-all"
+                      >
+                        📱 Notificar al profesor por WhatsApp
+                      </button>
+                    )}
                   </div>
                 ))}
                 {cargandoIA && (
